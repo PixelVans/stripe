@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { removeFromCart } from '../redux/slice'
 import { loadStripe } from '@stripe/stripe-js'
 
-const page = () => {
+const Page = () => {
     const dispatch = useDispatch();
     const cart = useSelector(state => state.cart.cart)
     console.log(cart)
@@ -74,4 +74,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

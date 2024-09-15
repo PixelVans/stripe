@@ -1,6 +1,6 @@
 import React from 'react'
 
-function page() {
+function Page() {
   return (
     <div>
       <h1><a href="/">Back home</a></h1>
@@ -9,4 +9,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

@@ -7,7 +7,7 @@ const saveState = (state) => {
     const serializedState = JSON.stringify(state);
     localStorage.setItem('reduxState', serializedState);
   } catch (err) {
-    alert("Could not save state", err);
+    console.log(err)
   }
 };
 
@@ -20,7 +20,7 @@ const loadState = () => {
     }
     return JSON.parse(serializedState);
   } catch (err) {
-   alert("Could not load state", err);
+   
     return undefined;
   }
 };
